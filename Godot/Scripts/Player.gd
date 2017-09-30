@@ -3,10 +3,12 @@ extends KinematicBody2D
 export var MOTION_SPEED = 140
 
 var RayNode
+var size
 
 func _ready():
+	var sprite = get_node("Sprite")
 	set_fixed_process(true)
-	
+	size = sprite.get_texture().get_size() * sprite.get_scale()
 	RayNode = get_node("RayCast2D")
 	
 
