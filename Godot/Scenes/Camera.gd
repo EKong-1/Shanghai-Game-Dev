@@ -3,7 +3,7 @@ extends Node2D
 onready var window_size = OS.get_window_size()	# Window size should be 1024x608
 onready var player = get_node("Player")
 onready var player_world_pos = get_player_world_pos()
-onready var rooms = Vector2Array()
+onready var rooms = Array()
 
 func _ready():
 	OS.set_window_position(Vector2(0,0))

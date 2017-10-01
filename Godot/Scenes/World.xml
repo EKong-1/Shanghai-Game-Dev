@@ -33,7 +33,7 @@
 				<resource  external="0">  </resource>
 				<resource  external="1">  </resource>
 				<resource  external="2">  </resource>
-				<vector2> 512, 96 </vector2>
+				<vector2> 512, 288 </vector2>
 			</array>
 			<string> "version" </string>
 			<int> 2 </int>
