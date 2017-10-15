@@ -11,6 +11,7 @@ func _ready():
 	canvas_transform[2] = player_world_pos * window_size
 	get_viewport().set_canvas_transform(canvas_transform)
 	rooms.append(Vector2(0,0))
+	new_room(Vector2(0,0))
 	set_process(true)
 
 func _process(delta):
@@ -42,4 +43,9 @@ func new_room(list):
 	var room = load("res://Scenes/Room.xml")
 	var node = room.instance()
 	node.set_pos(Vector2((list[0] * 1024), (list[1] * 608)));
+	node.setDoors(generateDoors())
 	add_child(node)
+	
+func generateDoors():
+	var doors = [true, true, false, false] # North, South, East, West
+	return doors

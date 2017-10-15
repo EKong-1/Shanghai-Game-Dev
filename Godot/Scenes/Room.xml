@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="7" version="2.1" version_name="Godot Engine v2.1.4.stable.official">
+<resource_file type="PackedScene" subresource_count="9" version="2.1" version_name="Godot Engine v2.1.4.stable.official">
 	<ext_resource path="res://Scenes/DoorNS.xml" type="PackedScene" index="4"></ext_resource>
-	<ext_resource path="res://Scenes/DoorEW.xml" type="PackedScene" index="5"></ext_resource>
+	<ext_resource path="res://Scenes/DoorEW.xml" type="PackedScene" index="6"></ext_resource>
+	<ext_resource path="res://Scenes/BlockedDoorNS.xml" type="PackedScene" index="5"></ext_resource>
+	<ext_resource path="res://Scenes/BlockedDoorEW.xml" type="PackedScene" index="7"></ext_resource>
 	<ext_resource path="res://Scenes/Room.gd" type="Script" index="0"></ext_resource>
-	<ext_resource path="res://Scenes/FloorSet.xml" type="TileSet" index="1"></ext_resource>
 	<ext_resource path="res://Scenes/TileSet.xml" type="TileSet" index="2"></ext_resource>
 	<ext_resource path="res://Scenes/InvisibleWall.xml" type="TileSet" index="3"></ext_resource>
+	<ext_resource path="res://Scenes/FloorSet.xml" type="TileSet" index="1"></ext_resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "conn_count" </string>
@@ -16,7 +18,7 @@
 			<array  len="0" shared="false">
 			</array>
 			<string> "names" </string>
-			<string_array  len="29">
+			<string_array  len="33">
 				<string> "Room" </string>
 				<string> "script/script" </string>
 				<string> "Node2D" </string>
@@ -43,19 +45,23 @@
 				<string> "__meta__" </string>
 				<string> "DoorN" </string>
 				<string> "transform/pos" </string>
+				<string> "BlockedDoorN" </string>
 				<string> "DoorS" </string>
-				<string> "DoorW" </string>
+				<string> "BlockedDoorS" </string>
 				<string> "DoorE" </string>
+				<string> "BlockedDoorE" </string>
+				<string> "DoorW" </string>
+				<string> "BlockedDoorW" </string>
 			</string_array>
 			<string> "node_count" </string>
-			<int> 8 </int>
+			<int> 12 </int>
 			<string> "node_paths" </string>
 			<array  len="0" shared="false">
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="164"> 				-1, -1, 2, 0, -1, 1, 1, 0, 0, 0, 0, 20, 3, -1, 16, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 2, 12, 8, 13, 8, 14, 9, 15, 10, 16, 11, 17, 11, 18, 11, 19, 12, 0, 0, 0, 20, 21, -1, 16, 4, 11, 5, 2, 6, 13, 7, 4, 8, 5, 9, 6, 10, 7, 11, 2, 12, 8, 13, 8, 14, 9, 15, 10, 16, 11, 17, 11, 18, 11, 19, 14, 0, 0, 0, 20, 22, -1, 17, 4, 15, 5, 2, 6, 16, 7, 4, 8, 5, 9, 6, 10, 7, 11, 2, 12, 8, 13, 8, 14, 9, 15, 10, 16, 11, 17, 11, 18, 11, 19, 17, 23, 18, 0, 0, 0, 2147483647, 24, 19, 1, 25, 20, 0, 0, 0, 2147483647, 26, 19, 1, 25, 21, 0, 0, 0, 2147483647, 27, 22, 1, 25, 23, 0, 0, 0, 2147483647, 28, 22, 1, 25, 24, 0 </int_array>
+			<int_array  len="208"> 				-1, -1, 2, 0, -1, 1, 1, 0, 0, 0, 0, 20, 3, -1, 16, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 2, 12, 8, 13, 8, 14, 9, 15, 10, 16, 11, 17, 11, 18, 11, 19, 12, 0, 0, 0, 20, 21, -1, 16, 4, 11, 5, 2, 6, 13, 7, 4, 8, 5, 9, 6, 10, 7, 11, 2, 12, 8, 13, 8, 14, 9, 15, 10, 16, 11, 17, 11, 18, 11, 19, 14, 0, 0, 0, 20, 22, -1, 17, 4, 15, 5, 2, 6, 16, 7, 4, 8, 5, 9, 6, 10, 7, 11, 2, 12, 8, 13, 8, 14, 9, 15, 10, 16, 11, 17, 11, 18, 11, 19, 17, 23, 18, 0, 0, 0, 2147483647, 24, 19, 2, 25, 20, 4, 1, 0, 0, 0, 2147483647, 26, 21, 2, 25, 20, 4, 1, 0, 0, 0, 2147483647, 27, 19, 2, 25, 22, 4, 1, 0, 0, 0, 2147483647, 28, 21, 2, 25, 22, 4, 1, 0, 0, 0, 2147483647, 29, 23, 1, 25, 24, 0, 0, 0, 2147483647, 30, 25, 1, 25, 24, 0, 0, 0, 2147483647, 31, 23, 1, 25, 26, 0, 0, 0, 2147483647, 32, 25, 1, 25, 26, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="25" shared="false">
+			<array  len="27" shared="false">
 				<resource  external="0">  </resource>
 				<int> -1 </int>
 				<int> 0 </int>
@@ -73,17 +79,19 @@
 				<int_array  len="176"> 					0, 0, 1, 0, 2, 0, 3, 0, 4, 0, 5, 0, 6, 0, 7, 0, 8, 0, 9, 0, 10, 0, 11, 0, 12, 0, 13, 0, 14, 0, 17, 0, 18, 0, 19, 0, 20, 0, 21, 0, 22, 0, 23, 0, 24, 0, 25, 0, 26, 0, 27, 0, 28, 0, 29, 0, 30, 0, 31, 0, 65536, 0, 65567, 0, 131072, 0, 131103, 0, 196608, 0, 196639, 0, 262144, 0, 262175, 0, 327680, 0, 327711, 0, 393216, 0, 393247, 0, 458752, 0, 458783, 0, 655360, 0, 655391, 0, 720896, 0, 720927, 0, 786432, 0, 786463, 0, 851968, 0, 851999, 0, 917504, 0, 917535, 0, 983040, 0, 983071, 0, 1048576, 0, 1048607, 0, 1114112, 0, 1114113, 0, 1114114, 0, 1114115, 0, 1114116, 0, 1114117, 0, 1114118, 0, 1114119, 0, 1114120, 0, 1114121, 0, 1114122, 0, 1114123, 0, 1114124, 0, 1114125, 0, 1114126, 0, 1114129, 0, 1114130, 0, 1114131, 0, 1114132, 0, 1114133, 0, 1114134, 0, 1114135, 0, 1114136, 0, 1114137, 0, 1114138, 0, 1114139, 0, 1114140, 0, 1114141, 0, 1114142, 0, 1114143, 0 </int_array>
 				<int> -3 </int>
 				<resource  external="3">  </resource>
-				<int_array  len="176"> 					65536, 0, 65537, 0, 65538, 0, 65539, 0, 65540, 0, 65541, 0, 65542, 0, 65543, 0, 65544, 0, 65545, 0, 65546, 0, 65547, 0, 65548, 0, 65549, 0, 65550, 0, 65553, 0, 65554, 0, 65555, 0, 65556, 0, 65557, 0, 65558, 0, 65559, 0, 65560, 0, 65561, 0, 65562, 0, 65563, 0, 65564, 0, 65565, 0, 65566, 0, 65567, 0, 131072, 0, 131103, 0, 196608, 0, 196639, 0, 262144, 0, 262175, 0, 327680, 0, 327711, 0, 393216, 0, 393247, 0, 458752, 0, 458783, 0, 524288, 0, 524319, 0, 720896, 0, 720927, 0, 786432, 0, 786463, 0, 851968, 0, 851999, 0, 917504, 0, 917535, 0, 983040, 0, 983071, 0, 1048576, 0, 1048607, 0, 1114112, 0, 1114143, 0, 1179648, 0, 1179649, 0, 1179650, 0, 1179651, 0, 1179652, 0, 1179653, 0, 1179654, 0, 1179655, 0, 1179656, 0, 1179657, 0, 1179658, 0, 1179659, 0, 1179660, 0, 1179661, 0, 1179662, 0, 1179665, 0, 1179666, 0, 1179667, 0, 1179668, 0, 1179669, 0, 1179670, 0, 1179671, 0, 1179672, 0, 1179673, 0, 1179674, 0, 1179675, 0, 1179676, 0, 1179677, 0, 1179678, 0, 1179679, 0 </int_array>
+				<int_array  len="184"> 					14, 0, 17, 0, 65536, 0, 65537, 0, 65538, 0, 65539, 0, 65540, 0, 65541, 0, 65542, 0, 65543, 0, 65544, 0, 65545, 0, 65546, 0, 65547, 0, 65548, 0, 65549, 0, 65550, 0, 65553, 0, 65554, 0, 65555, 0, 65556, 0, 65557, 0, 65558, 0, 65559, 0, 65560, 0, 65561, 0, 65562, 0, 65563, 0, 65564, 0, 65565, 0, 65566, 0, 65567, 0, 131072, 0, 131103, 0, 196608, 0, 196639, 0, 262144, 0, 262175, 0, 327680, 0, 327711, 0, 393216, 0, 393247, 0, 458752, 0, 458783, 0, 524288, 0, 524319, 0, 720896, 0, 720927, 0, 786432, 0, 786463, 0, 851968, 0, 851999, 0, 917504, 0, 917535, 0, 983040, 0, 983071, 0, 1048576, 0, 1048607, 0, 1114112, 0, 1114143, 0, 1179648, 0, 1179649, 0, 1179650, 0, 1179651, 0, 1179652, 0, 1179653, 0, 1179654, 0, 1179655, 0, 1179656, 0, 1179657, 0, 1179658, 0, 1179659, 0, 1179660, 0, 1179661, 0, 1179662, 0, 1179665, 0, 1179666, 0, 1179667, 0, 1179668, 0, 1179669, 0, 1179670, 0, 1179671, 0, 1179672, 0, 1179673, 0, 1179674, 0, 1179675, 0, 1179676, 0, 1179677, 0, 1179678, 0, 1179679, 0, 1245198, 0, 1245201, 0 </int_array>
 				<dictionary  shared="false">
 					<string> "_edit_lock_" </string>
 					<bool> True </bool>
 				</dictionary>
 				<resource  external="4">  </resource>
 				<vector2> 512, 32 </vector2>
-				<vector2> 512, 576 </vector2>
 				<resource  external="5">  </resource>
-				<vector2> 16, 288 </vector2>
+				<vector2> 512, 576 </vector2>
+				<resource  external="6">  </resource>
 				<vector2> 1008, 288 </vector2>
+				<resource  external="7">  </resource>
+				<vector2> 16, 288 </vector2>
 			</array>
 			<string> "version" </string>
 			<int> 2 </int>
