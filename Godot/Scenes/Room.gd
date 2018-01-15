@@ -9,8 +9,18 @@ onready var collideE = get_node("BlockedDoorE")
 onready var doorW = get_node("DoorW")
 onready var collideW = get_node("BlockedDoorW")
 
-var open = []
+var open = [true, true, true, true]
 var coords
+
+func getOpen(direction):
+	if (direction == "north"):
+		return open[0]
+	elif (direction == "south"):
+		return open[1]
+	elif (direction == "east"):
+		return open[2]
+	elif (direction == "west"):
+		return open[3]
 
 func setCoords(c):
 	coords = c

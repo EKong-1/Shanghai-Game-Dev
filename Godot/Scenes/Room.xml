@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="9" version="2.1" version_name="Godot Engine v2.1.4.stable.official">
 	<ext_resource path="res://Scenes/DoorNS.xml" type="PackedScene" index="4"></ext_resource>
-	<ext_resource path="res://Scenes/DoorEW.xml" type="PackedScene" index="6"></ext_resource>
 	<ext_resource path="res://Scenes/BlockedDoorNS.xml" type="PackedScene" index="5"></ext_resource>
+	<ext_resource path="res://Scenes/DoorEW.xml" type="PackedScene" index="6"></ext_resource>
 	<ext_resource path="res://Scenes/BlockedDoorEW.xml" type="PackedScene" index="7"></ext_resource>
-	<ext_resource path="res://Scenes/Room.gd" type="Script" index="0"></ext_resource>
 	<ext_resource path="res://Scenes/TileSet.xml" type="TileSet" index="2"></ext_resource>
 	<ext_resource path="res://Scenes/InvisibleWall.xml" type="TileSet" index="3"></ext_resource>
 	<ext_resource path="res://Scenes/FloorSet.xml" type="TileSet" index="1"></ext_resource>
+	<ext_resource path="res://Scenes/Room.gd" type="Script" index="0"></ext_resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "conn_count" </string>

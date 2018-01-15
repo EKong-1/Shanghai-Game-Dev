@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-export var MOTION_SPEED = 140
+export var MOTION_SPEED = 200
 
 var RayNode
 var size
